@@ -26,7 +26,7 @@ from deepgram import (
     Microphone,
 )
 
-# Load environment variables
+# Cargar las variables de entorno
 load_dotenv()
 
 class LanguageModelProcessor:
@@ -72,7 +72,7 @@ class TextToSpeech:
 
     def speak(self, text):
         if not self.is_installed("ffplay"):
-            raise ValueError("ffplay not found, necessary to stream audio.")
+            raise ValueError("ffplay no encontrado, necesario para reproducir audio.")
 
         DEEPGRAM_URL = f"https://api.deepgram.com/v1/speak?model={self.MODEL_NAME}"
         headers = {
@@ -163,7 +163,7 @@ async def get_transcript(callback):
         await dg_connection.finish()
 
     except Exception as e:
-        print(f"Could not open socket: {e}")
+        print(f"No se pudo abrir el socket: {e}")
         return
 
 class ConversationManager:
@@ -171,9 +171,10 @@ class ConversationManager:
         self.transcription_response = ""
         self.llm = LanguageModelProcessor()
 
-    async def main(self):
+    async def main(self, transcription_display_callback, response_display_callback):
         def handle_full_sentence(full_sentence):
             self.transcription_response = full_sentence
+            transcription_display_callback(full_sentence)  # Actualiza el texto de la transcripción
 
         while True:
             await get_transcript(handle_full_sentence)
@@ -182,21 +183,29 @@ class ConversationManager:
                 break
 
             llm_response = self.llm.process(self.transcription_response)
+            response_display_callback(llm_response)  # Actualiza el texto de la respuesta del modelo
             tts = TextToSpeech()
             tts.speak(llm_response)
 
             self.transcription_response = ""
 
-def run_conversation():
+def run_conversation(transcription_display_callback, response_display_callback):
     manager = ConversationManager()
-    asyncio.run(manager.main())
+    asyncio.run(manager.main(transcription_display_callback, response_display_callback))
 
-# Streamlit UI
-st.title("Voice Assistant with Language Model and Text-to-Speech")
+# Interfaz Streamlit
+st.title("Asistente de Voz con Modelo de Lenguaje y Texto a Voz")
 
-if st.button("Start Conversation"):
-    st.write("Listening for speech input...")
-    run_conversation()
+transcription_text_area = st.empty()  # Área para mostrar la transcripción
+response_text_area = st.empty()  # Área para mostrar la respuesta del modelo
 
-st.text_area("LLM Response", height=200)
+if st.button("Iniciar Conversación"):
+    transcription_text_area.text_area("Texto Recibido", height=200)
+    response_text_area.text_area("Respuesta del Modelo", height=200)
+
+    # Llama a la función que ejecutará la conversación
+    run_conversation(
+        transcription_display_callback=lambda text: transcription_text_area.text_area("Texto Recibido", value=text, height=200),
+        response_display_callback=lambda text: response_text_area.text_area("Respuesta del Modelo", value=text, height=200)
+    )
 
