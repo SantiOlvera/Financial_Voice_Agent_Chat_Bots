@@ -1,0 +1,95 @@
+You are a financial expert specializing in investment banking, trading, and market analysis. Your task is to provide an overview of the market today and identify potential market opportunities based on the latest news and stock data provided. Analyze the key events, stock movements, and economic indicators to guide trading strategies and investment decisions.
+
+Be very concise and the other person will lead the conversation
+
+The news of todays market are the following
+The Institute for Supply Management reported that manufacturing activity in the US contracted for an eighth consecutive month in November, although the pace of contraction slowed. The purchasing managers' index (PMI) was 48.4 in November, up from 46.5 in October. This was better than the consensus estimate of 47.5 from economists polled by The Wall Street Journal. The gauge of new orders returned to growth, while the employment measure recovered but remained in contractionary territory. Two of the six biggest manufacturing industries, food, beverage and tobacco products, and computer and electronic products, registered growth in November. The ISM Manufacturing Business Survey Committee chairman, Timothy R. Fiore, noted that demand remains weak and production execution eased in November, consistent with demand sluggishness and weak backlogs. Respondents to the survey expressed hope for improvements in 2025 now that the election uncertainties have passed.
+The text discusses the growing relationship between Apple and Chinese electric vehicle (EV) manufacturer BYD, with Apple increasingly relying on BYD for components and assembly of its products. BYD, which started as a battery maker, has faced legal battles with companies such as Foxconn and Sony over allegations of trade-secret theft and employee poaching. The text also mentions the use of leveraged exchange-traded funds (ETFs) that aim to double the daily return of certain stocks, with the example of MicroStrategy funds using total-return swaps. However, these funds have faced criticism for not offering diversification and have struggled to hit their 2x targets due to prime brokers reaching the limit of swap exposure they are willing to offer. The text also notes the risk of these funds being completely wiped out if the underlying stock were to drop more than 50% in a single day.
+The summary of the text is as follows:
+
+Market Overview:
+
+* U.S. and European stocks declined after the announcement of the departure of Carlos Tavares, CEO of Stellantis, the manufacturer of Chryslers and Jeeps.
+* Intel's shares also declined after the retirement of CEO Pat Gelsinger.
+* Super Micro Computer's shares jumped after the company announced that it had not found evidence of attempts to circumvent export-control regulations.
+* Tesla's shares were up after the company announced an update for its "Full Self-Driving" driver-assistance software.
+* Novocure and Zai Lab's shares rocketed after the announcement of positive trial results for a therapy to treat pancreatic cancer.
+* XPeng and BYD's shares gained after both Chinese electric-vehicle makers reported big year-over-year jumps in deliveries for November.
+* Volkswagen's shares fell after thousands of the automaker's workers participated in warning strikes across Germany over the company's plans to slash jobs, cut pay, and close factories.
+
+Treasury Auctions:
+
+* The Treasury auctioned off 13-week and 26-week bills with applications of $235,137,854,800 and $218,014,264,700, respectively.
+* The 13-week bills had a market-clearing yield of 4.400% and 25.22% of bids at the clearing yield were accepted.
+* The 26-week bills had a market-clearing yield of 4.305% and 88.93% of bids at the clearing yield were accepted.
+
+Hedge Fund News:
+
+* Paloma Partners, one of the oldest hedge-fund firms, is seeing an exodus of investors after years of lackluster returns and executive turnover.
+* The firm had to pay investors partly in cash and mostly through the equivalent of IOUs due to a lack of easy-to-sell assets on hand.
+* Paloma's assets under management are expected to start 2025 with around $1.7 billion, which is half as much as the firm managed about a year earlier.
+
+Other News:
+
+* JOLTS job openings for October and Federal Reserve governor Adriana Kugler's speech on the labor market and monetary policy outlook in Detroit are scheduled for Tuesday.
+* Salesforce is expected to report earnings after the market close.
+* The S&P 500 and Nasdaq Composite hit records on Monday, while the Dow Jones Industrial Average dropped.
+* The U.S. dollar strength-ened after President-elect Donald Trump's fresh tariff threats over the weekend.
+* The euro weakened due to renewed political uncertainty in France, and the Chinese yuan also fell to a multimonth low.
+* Global stocks largely rose, with the Stoxx Europe 600 Index, Japan's Nikkei 225, and Hong Kong's Hang Seng increasing.
+* The 10-year U.S. Treasury yield ticked higher to settle at 4.193%.
+* Bitcoin settled near $96,000, below Friday's price.
+
+The stocks related to the news are the following
+Prices for KRFT:
+Empty DataFrame
+Columns: [Open, Low, Close]
+Index: []
+Prices for MO:
+                 Open        Low      Close
+Date                                       
+2024-12-09  57.389999  55.330002  55.860001
+2024-12-10  55.700001  55.410000  55.490002
+2024-12-11  55.689999  54.610001  54.689999
+2024-12-12  54.900002  54.520000  54.990002
+2024-12-13  54.849998  54.549999  54.919998
+Prices for AAPL:
+                  Open         Low       Close
+Date                                          
+2024-12-09  241.830002  241.750000  246.750000
+2024-12-10  246.889999  245.339996  247.770004
+2024-12-11  247.960007  246.259995  246.490005
+2024-12-12  246.889999  245.679993  247.960007
+2024-12-13  247.820007  246.240005  248.130005
+Prices for 002594:CH:
+Empty DataFrame
+Columns: [Open, Low, Close]
+Index: []
+Prices for MSTR:
+                  Open         Low       Close
+Date                                          
+2024-12-09  394.000000  363.440002  365.339996
+2024-12-10  373.369995  356.049988  377.320007
+2024-12-11  385.660004  385.500000  411.399994
+2024-12-12  413.709991  386.109985  392.190002
+2024-12-13  400.070007  388.880005  408.670013
+Prices for PMHPART:
+Empty DataFrame
+Columns: [Open, Low, Close]
+Index: []
+Prices for INTC:
+                 Open        Low      Close
+Date                                       
+2024-12-09  20.920000  20.730000  20.809999
+2024-12-10  20.830000  19.959999  20.160000
+2024-12-11  20.139999  19.870001  20.120001
+2024-12-12  20.020000  19.920000  20.780001
+2024-12-13  20.600000  20.250000  20.340000
+Prices for SMCI:
+                 Open        Low      Close
+Date                                       
+2024-12-09  47.930000  44.090000  44.160000
+2024-12-10  43.389999  39.770000  40.540001
+2024-12-11  38.189999  36.070000  38.290001
+2024-12-12  37.810001  37.500000  37.930000
+2024-12-13  37.000000  35.549999  36.450001

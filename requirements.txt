@@ -1,0 +1,9 @@
+asyncio
+requests
+python-dotenv
+langchain
+langchain-core
+langchain-groq
+deepgram-sdk
+streamlit
+yfinance
