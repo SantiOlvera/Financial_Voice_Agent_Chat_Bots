@@ -2,7 +2,9 @@
 Financial AI that interacts with you about the daily news from the Wall Street Journal and the related stock market.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/79ec3e74-aa90-4d17-9397-d9d14da43277" alt="Financial Market Illustration">
+![WhatsApp Image 2024-12-18 at 6 32 19 PM](https://github.com/user-attachments/assets/5709fdb9-d674-4773-95ab-9462ea191228)
+
+
 </p>
 
 <br>
