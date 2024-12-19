@@ -36,10 +36,17 @@ The goal of this project is to develop a financial voice agent capable of provid
    ```bash
    brew install ffmpeg
    ```
-3. Run the application:
+3. Obtain free API keys from:
+   - [Deepgram](https://deepgram.com)
+   - [Groq](https://console.groq.com/playground)
+4. Add the API keys to your environment variables or configuration file.
+5. Run the application:
    ```bash
    streamlit run app.py
    ```
 
-## Video (Streamlit)
+## Video Dashboard (Streamlit)
+
+[Watch the video demonstration](https://www.dropbox.com/scl/fi/mh6dvviju7q5jlhiaoqhn/Screen-Recording-2024-05-28-at-9.27.57-a.m..mov?rlkey=9nmqf8mm2l3gxuvsfd5vku1xj&st=x7xwdv30&dl=0)
+
 
