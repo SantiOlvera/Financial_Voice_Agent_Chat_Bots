@@ -9,7 +9,7 @@ Financial AI that interacts with you about the daily news from the Wall Street J
 
 ## Team
 
-- [Santiago Olvera Moreno](https://github.com/SantiOlvera), Data Science and Actuarial Science Double Bachelor Program student at ITAM.
+- [Santiago Olvera Moreno](https://github.com/SantiOlvera), Data Science and Actuarial Science student at ITAM.
 - [Emiliano Bobadilla](https://github.com/BobadillaE), Data Science student at ITAM.
 
 ## Objective
