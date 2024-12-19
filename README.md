@@ -9,7 +9,7 @@ Financial AI that interacts with you about the daily news from the Wall Street J
 
 ## Team
 
-- [Santiago Olvera Moreno](https://github.com/SantiOlvera), Data Science and Actuarial Science student at ITAM.
+- [Santiago Olvera Moreno](https://github.com/SantiOlvera), Data Science and Actuarial Science Double Bachelor Program student at ITAM.
 - [Emiliano Bobadilla](https://github.com/BobadillaE), Data Science student at ITAM.
 
 ## Objective
@@ -40,7 +40,7 @@ The goal of this project is to develop a financial voice agent capable of provid
    - [Deepgram](https://deepgram.com)
    - [Groq](https://console.groq.com/playground)
 4. Add the API keys to your environment variables or configuration file.
-5. Run the script to get the system_prompt
+5. Run the script to parse the system prompt:
    ```bash
    python3 parser_pdf.py
    ```
@@ -48,6 +48,11 @@ The goal of this project is to develop a financial voice agent capable of provid
    ```bash
    streamlit run app.py
    ```
+
+## Hugging Face Space
+
+1. For Text-to-Text (TTT) usage only: [Finance Agent](https://huggingface.co/spaces/capi10/Finance_Agent).
+2. For Speech-to-Text (STT), Text-to-Text (TTT), and Text-to-Speech (TTS) integration: [Finance Voice Agent](https://huggingface.co/spaces/capi10/finance_voice_agent) (Note: Hugging Face currently does not support Homebrew installations. That is why the audio microphone and audio does not work).
 
 ## Video Dashboard (Streamlit)
 
