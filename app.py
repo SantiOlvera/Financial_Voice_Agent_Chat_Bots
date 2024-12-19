@@ -6,6 +6,7 @@ import subprocess
 import requests
 import streamlit as st
 from dotenv import load_dotenv
+import datetime
 
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_groq import ChatGroq
@@ -193,19 +194,21 @@ def run_conversation(transcription_display_callback, response_display_callback):
     manager = ConversationManager()
     asyncio.run(manager.main(transcription_display_callback, response_display_callback))
 
-# Interfaz Streamlit
-st.title("Asistente de Voz con Modelo de Lenguaje y Texto a Voz")
+# Streamlit UI Configuration
+today = datetime.date.today()
+
+##Put the title of the app Finace agent of todays market and put the variable of today
+st.title(f'{today} Finance Agent of Today Market')
 
 transcription_text_area = st.empty()  # Área para mostrar la transcripción
 response_text_area = st.empty()  # Área para mostrar la respuesta del modelo
 
-if st.button("Iniciar Conversación"):
-    transcription_text_area.text_area("Texto Recibido", height=200)
-    response_text_area.text_area("Respuesta del Modelo", height=200)
+if st.button("Start Conversation"):
+    transcription_text_area.text_area("Text Received", height=200)
+    response_text_area.text_area("Model Response", height=200)
 
     # Llama a la función que ejecutará la conversación
     run_conversation(
-        transcription_display_callback=lambda text: transcription_text_area.text_area("Texto Recibido", value=text, height=200),
-        response_display_callback=lambda text: response_text_area.text_area("Respuesta del Modelo", value=text, height=200)
+        transcription_display_callback=lambda text: transcription_text_area.text_area("Text Received", value=text, height=200),
+        response_display_callback=lambda text: response_text_area.text_area("Model Response", value=text, height=200)
     )
-
