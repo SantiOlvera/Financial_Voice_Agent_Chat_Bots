@@ -40,7 +40,11 @@ The goal of this project is to develop a financial voice agent capable of provid
    - [Deepgram](https://deepgram.com)
    - [Groq](https://console.groq.com/playground)
 4. Add the API keys to your environment variables or configuration file.
-5. Run the application:
+5. Run the script to get the system_prompt
+   ```bash
+   python3 parser_pdf.py
+   ```
+6. Run the application:
    ```bash
    streamlit run app.py
    ```
