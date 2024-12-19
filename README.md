@@ -52,7 +52,7 @@ The goal of this project is to develop a financial voice agent capable of provid
 ## Hugging Face Space
 
 1. For Text-to-Text (TTT) usage only: [Finance Agent](https://huggingface.co/spaces/capi10/Finance_Agent).
-2. For Speech-to-Text (STT), Text-to-Text (TTT), and Text-to-Speech (TTS) integration: [Finance Voice Agent](https://huggingface.co/spaces/capi10/finance_voice_agent) (Note: Hugging Face currently does not support Homebrew installations. That is why the audio microphone and audio does not work).
+2. For Speech-to-Text (STT), Text-to-Text (TTT), and Text-to-Speech (TTS) integration: [Finance Voice Agent](https://huggingface.co/spaces/capi10/finance_voice_agent) (Note: Hugging Face currently does not support Homebrew installations. That is why the microphone and audio does not work).
 
 ## Video Dashboard (Streamlit)
 
