@@ -56,6 +56,6 @@ The goal of this project is to develop a financial voice agent capable of provid
 
 ## Video Dashboard (Streamlit)
 
-[Watch the video demonstration](https://www.dropbox.com/scl/fi/mh6dvviju7q5jlhiaoqhn/Screen-Recording-2024-05-28-at-9.27.57-a.m..mov?rlkey=9nmqf8mm2l3gxuvsfd5vku1xj&st=x7xwdv30&dl=0)
+[Watch the video demonstration](https://www.dropbox.com/scl/fi/2gicgzr3ncvw3ethmbp3x/financial-voice-agent.mp4?rlkey=o24v4olm7xils5yac5xiwzmsq&st=nhs2cutk&dl=0)
 
 
